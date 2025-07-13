@@ -895,7 +895,16 @@
         animateOnScroll.observe(el);
     });
 </script>
-    
+
+
+  <script>
+  document.getElementById("enrollBtn").addEventListener("click", function() {
+    gtag('event', 'button_click', {
+      'event_category': 'Landing Page',
+      'event_label': 'enrollBtn'
+    });
+  });
+</script>
 
 </body>
 </html>
