@@ -1,33 +1,21 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0VRVJGYGE2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0VRVJGYGE2');
-</script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced Bangla Cracking Course | প্রিমিয়াম অ্যাকাউন্ট ক্র্যাকিং মাস্টারক্লাস</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Kalpurush&display=swap" rel="stylesheet">
+    <title>EliteHacker Pro - 16+ প্রিমিয়াম হ্যাকিং কোর্স ও টুলস</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #FF4D79;
-            --secondary: #2A2D43;
-            --accent: #00F5A7;
-            --dark: #12141F;
-            --light: #F5F7FA;
-            --gradient: linear-gradient(135deg, var(--primary), #FF8E53);
-            --gradient-accent: linear-gradient(135deg, var(--accent), #00D4FF);
+            --primary: #0d1117;
+            --secondary: #161b22;
+            --accent: #ff6b00;
+            --accent-dark: #cc5500;
+            --text: #f0f6fc;
+            --text-secondary: #8b949e;
+            --danger: #ff375f;
+            --success: #3fb950;
         }
         
         * {
@@ -37,51 +25,115 @@
         }
         
         body {
-            font-family: 'Kalpurush', 'Hind Siliguri', sans-serif;
-            background-color: var(--dark);
-            color: var(--light);
+            font-family: 'Poppins', sans-serif;
+            background: var(--primary);
+            color: var(--text);
+            line-height: 1.6;
             overflow-x: hidden;
-            line-height: 1.7;
         }
         
-        /* Bangla Font Styling */
         .bangla {
-            font-family: 'Kalpurush', 'Hind Siliguri', sans-serif;
-            line-height: 1.8;
+            font-family: 'Tiro Bangla', serif;
         }
         
-        /* Glow Animation */
-        @keyframes glow {
-            0% { text-shadow: 0 0 10px rgba(255, 77, 121, 0.5); }
-            50% { text-shadow: 0 0 20px rgba(255, 77, 121, 0.8), 0 0 30px rgba(255, 77, 121, 0.4); }
-            100% { text-shadow: 0 0 10px rgba(255, 77, 121, 0.5); }
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--primary), #000);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            border-bottom: 1px solid rgba(255, 107, 0, 0.2);
         }
         
-        /* Floating Animation */
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-15px); }
-            100% { transform: translateY(0px); }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
         }
         
-        /* Pulse Animation */
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-icon {
+            color: var(--accent);
+            font-size: 2rem;
+        }
+        
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: linear-gradient(to right, var(--accent), #ff9e00);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .cta-button {
+            background: linear-gradient(90deg, var(--accent), var(--accent-dark));
+            color: #000;
+            border: none;
+            padding: 0.8rem 1.8rem;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 107, 0, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 107, 0, 0.4);
         }
         
         /* Hero Section */
         .hero {
-            height: 100vh;
-            position: relative;
-            overflow: hidden;
+            background: url('https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3') no-repeat center center/cover;
+            height: 90vh;
             display: flex;
             align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 0 20px;
-            background: url('https://images.unsplash.com/photo-1563770660941-10a63607739e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover no-repeat;
+            position: relative;
+            overflow: hidden;
         }
         
         .hero::before {
@@ -91,811 +143,1130 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, rgba(18, 20, 31, 0.9) 0%, rgba(42, 45, 67, 0.8) 100%);
-            z-index: 1;
+            background: rgba(13, 17, 23, 0.9);
         }
         
         .hero-content {
             position: relative;
-            z-index: 2;
             max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
         }
         
         .hero h1 {
-            font-size: 4.5rem;
-            margin-bottom: 1.5rem;
-            background: linear-gradient(45deg, var(--accent), var(--primary));
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            animation: glow 3s ease-in-out infinite;
+            font-size: 4rem;
+            margin-bottom: 1rem;
             line-height: 1.2;
         }
         
-        .hero .tagline {
-            font-size: 1.8rem;
-            margin-bottom: 2.5rem;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-            color: var(--light);
-        }
-        
-        /* Animated Grid Background */
-        .grid-pattern {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: 
-                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-            background-size: 40px 40px;
-            animation: gridMove 100s linear infinite;
-            z-index: 0;
-        }
-        
-        @keyframes gridMove {
-            0% { background-position: 0 0; }
-            100% { background-position: 1000px 1000px; }
-        }
-        
-        /* Floating Elements */
-        .floating-elements {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            pointer-events: none;
-            z-index: 1;
-        }
-        
-        .floating-element {
-            position: absolute;
-            opacity: 0.7;
-            animation: float 6s ease-in-out infinite;
-        }
-        
-        /* CTA Button */
-        .cta-button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background: var(--gradient);
-            color: white;
-            border: none;
-            padding: 18px 45px;
-            font-size: 1.3rem;
-            font-weight: 600;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            box-shadow: 0 10px 25px rgba(255, 45, 85, 0.4);
-            position: relative;
-            overflow: hidden;
-            z-index: 1;
-        }
-        
-        .cta-button:hover {
-            transform: translateY(-5px) scale(1.03);
-            box-shadow: 0 15px 35px rgba(255, 45, 85, 0.6);
-        }
-        
-        .cta-button:active {
-            transform: translateY(2px);
-        }
-        
-        .cta-button::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-            transition: 0.5s;
-            z-index: -1;
-        }
-        
-        .cta-button:hover::before {
-            left: 100%;
-        }
-        
-        /* Course Modules Section */
-        .modules {
-            padding: 100px 20px;
-            position: relative;
-            background: var(--secondary);
-        }
-        
-        .section-header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-        
-        .section-header h2 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
+        .hero-highlight {
             color: var(--accent);
-            position: relative;
-            display: inline-block;
+            text-shadow: 0 0 10px rgba(255, 107, 0, 0.5);
         }
         
-        .section-header h2::after {
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            color: var(--text-secondary);
+        }
+        
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .hero-buttons .cta-button {
+            font-size: 1.1rem;
+            padding: 1rem 2.5rem;
+        }
+        
+        .secondary-button {
+            background: transparent;
+            color: var(--accent);
+            border: 2px solid var(--accent);
+        }
+        
+        /* Categories Section */
+        .categories {
+            padding: 5rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        .section-title::after {
             content: '';
             position: absolute;
-            bottom: -10px;
+            bottom: -15px;
             left: 50%;
             transform: translateX(-50%);
             width: 80px;
-            height: 3px;
-            background: var(--gradient);
-            border-radius: 3px;
+            height: 4px;
+            background: var(--accent);
+            border-radius: 2px;
         }
         
-        .module-container {
-            max-width: 1000px;
-            margin: 0 auto;
+        .categories-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
         }
         
-        .module-card {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 15px;
-            padding: 30px;
-            transition: all 0.4s ease;
-            position: relative;
+        .category-card {
+            background: var(--secondary);
+            border-radius: 10px;
             overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             border: 1px solid rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
         }
         
-        .module-card:hover {
+        .category-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-            border-color: var(--accent);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 0 0 2px var(--accent);
         }
         
-        .module-card h3 {
-            font-size: 1.8rem;
-            margin-bottom: 20px;
+        .category-header {
+            padding: 1.5rem;
+            background: rgba(255, 107, 0, 0.1);
+            border-bottom: 1px solid rgba(255, 107, 0, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .category-header h3 {
+            font-size: 1.5rem;
             color: var(--accent);
-            position: relative;
-            padding-bottom: 10px;
         }
         
-        .module-card h3::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 50px;
-            height: 3px;
-            background: var(--gradient);
-            border-radius: 3px;
+        .category-icon {
+            font-size: 1.8rem;
+            color: var(--accent);
         }
         
-        .module-list {
+        .category-content {
+            padding: 1.5rem;
+        }
+        
+        .category-list {
             list-style: none;
         }
         
-        .module-item {
-            padding: 12px 0;
-            border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
-            position: relative;
-            padding-left: 30px;
+        .category-list li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
         }
         
-        .module-item:last-child {
+        .category-list li:last-child {
             border-bottom: none;
         }
         
-        .module-item::before {
-            content: '→';
-            position: absolute;
-            left: 0;
+        .list-icon {
             color: var(--accent);
-            font-weight: bold;
+            min-width: 24px;
+            margin-top: 3px;
         }
         
         /* Pricing Section */
         .pricing {
-            padding: 100px 20px;
-            background: var(--dark);
+            padding: 5rem 2rem;
+            background: var(--secondary);
             text-align: center;
-            position: relative;
+        }
+        
+        .pricing-container {
+            max-width: 1200px;
+            margin: 0 auto;
         }
         
         .pricing-card {
-            background: rgba(0, 245, 167, 0.1);
+            background: var(--primary);
             border-radius: 15px;
-            padding: 40px;
-            max-width: 500px;
+            padding: 3rem;
+            max-width: 800px;
             margin: 0 auto;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
             border: 2px solid var(--accent);
             position: relative;
             overflow: hidden;
         }
         
         .pricing-card::before {
-            content: '';
+            content: 'বিশেষ অফার';
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, transparent, rgba(0, 245, 167, 0.05), transparent);
-            z-index: 0;
-        }
-        
-        .pricing-content {
-            position: relative;
-            z-index: 1;
+            top: 20px;
+            right: -50px;
+            background: var(--danger);
+            color: white;
+            padding: 0.5rem 3rem;
+            transform: rotate(45deg);
+            font-weight: 700;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
         }
         
         .price {
-            font-size: 3.5rem;
+            font-size: 4rem;
             font-weight: 700;
-            margin: 20px 0;
             color: var(--accent);
+            margin: 1.5rem 0;
         }
         
         .price span {
             font-size: 1.5rem;
-            font-weight: normal;
+            color: var(--text-secondary);
+            text-decoration: line-through;
+            margin-left: 10px;
         }
         
-        .enroll-button {
-            background: var(--gradient-accent);
-            color: var(--dark);
-            border: none;
-            padding: 15px 40px;
+        .package-features {
+            list-style: none;
+            margin: 2rem 0;
+            text-align: left;
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+        
+        .package-features li {
+            padding: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .package-features li:last-child {
+            border-bottom: none;
+        }
+        
+        .package-features i {
+            color: var(--accent);
             font-size: 1.2rem;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 20px rgba(0, 245, 167, 0.3);
-            font-weight: 600;
-            margin-top: 20px;
-            display: inline-block;
         }
         
-        .enroll-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 30px rgba(0, 245, 167, 0.4);
+        /* Testimonials */
+        .testimonials {
+            padding: 5rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
         }
         
-        /* Floating Action Button */
-        .fab {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 60px;
-            height: 60px;
-            background: var(--gradient);
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .testimonial-card {
+            background: var(--secondary);
+            border-radius: 10px;
+            padding: 2rem;
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 5rem;
+            color: rgba(255, 107, 0, 0.1);
+            font-family: serif;
+            line-height: 1;
+        }
+        
+        .testimonial-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .testimonial-text {
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
+            background: var(--accent);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.5rem;
-            box-shadow: 0 10px 25px rgba(255, 45, 85, 0.4);
+            font-weight: bold;
+            color: var(--primary);
+        }
+        
+        .author-info h4 {
+            color: var(--accent);
+        }
+        
+        .author-info p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        /* FAQ Section */
+        .faq {
+            padding: 5rem 2rem;
+            background: var(--secondary);
+        }
+        
+        .faq-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            overflow: hidden;
+            background: var(--primary);
+        }
+        
+        .faq-question {
+            padding: 1.5rem;
+            background: rgba(0, 0, 0, 0.2);
+            font-weight: 600;
             cursor: pointer;
-            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 1.5rem;
+            max-height: 500px;
+        }
+        
+        /* Footer */
+        footer {
+            background: #000;
+            padding: 4rem 2rem 2rem;
+            border-top: 1px solid rgba(255, 107, 0, 0.2);
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .footer-col h3 {
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: var(--secondary);
+            border-radius: 50%;
+            color: var(--text);
             transition: all 0.3s ease;
-            animation: pulse 2s infinite;
         }
         
-        .fab:hover {
-            transform: scale(1.1);
+        .social-links a:hover {
+            background: var(--accent);
+            color: var(--primary);
+            transform: translateY(-3px);
         }
         
-        /* Responsive Adjustments */
+        .copyright {
+            text-align: center;
+            padding-top: 3rem;
+            margin-top: 3rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Design */
         @media (max-width: 992px) {
             .hero h1 {
-                font-size: 3.5rem;
+                font-size: 3rem;
             }
             
-            .hero .tagline {
-                font-size: 1.5rem;
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
             }
         }
         
         @media (max-width: 768px) {
             .hero h1 {
-                font-size: 2.8rem;
-            }
-            
-            .hero .tagline {
-                font-size: 1.3rem;
-            }
-            
-            .section-header h2 {
                 font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .price {
+                font-size: 3rem;
+            }
+            
+            .categories-grid {
+                grid-template-columns: 1fr;
             }
         }
         
         @media (max-width: 576px) {
+            .hero {
+                height: auto;
+                padding: 4rem 1rem;
+            }
+            
             .hero h1 {
-                font-size: 2.2rem;
-            }
-            
-            .hero .tagline {
-                font-size: 1.1rem;
-            }
-            
-            .section-header h2 {
                 font-size: 2rem;
             }
             
-            .module-card {
-                padding: 25px 20px;
+            .pricing-card {
+                padding: 2rem 1.5rem;
             }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+        
+        /* Custom Animations */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            background: transparent;
+            border: none;
+            color: var(--text);
+            font-size: 1.5rem;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    
-    
-    <!-- Course Modules Section -->
-<section class="modules">
-    <div class="section-header">
-        <h2 class="bangla">সিক্রেট মেথড সমূহ</h2>
-        <p class="bangla">এখানে আপনি খুব বিরল ব্যক্তিগত জিনিস পাবেন</p>
-       <p class="bangla">যেমন কোর্স, 120+ methods, Hidden টুলস, এবং আরও অনেক কিছু </p>
-    </div>
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="logo-text">EliteHacker Pro</div>
+            </div>
+            <nav class="nav-links">
+                <a href="#categories">ক্যাটেগরি</a>
+                <a href="#pricing">ক্রয় করুন</a>
+                <a href="#testimonials">পর্যালোচনা</a>
+                <a href="#faq">প্রশ্নোত্তর</a>
+            </nav>
+            <button class="cta-button">এখনই কিনুন</button>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
 
-
-     <!-- Step 1: Interesting modules -->
-        <div class="module-card full-width">
-            <h3 class="bangla">মেথড কম্বো ১: ট্রেন্ডিং</h3>
-            <div class="⬆️PRIVATE COURSE ⬆️">
-			
-			
-                <!-- ⬆️PRIVATE COURSE ⬆️ -->
-                <div class="tool-category">
-                    <h4>⬆️PRIVATE COURSE ⬆️</h4>
-                    <ul>
-                        <li>🛫C@rding Course</li>
-                        <li>🛫Cr@cking Course</li>
-                        <li>🛫Bl@ck Hat Hacking Course</li>
-                        <li>🛫AI Courses</li>
-			<li>🛫Other We Can't Mention here</li>
-			<li>⚰Cxc checker making course & source codes</li>
-                    </ul>
-                </div>
-                
-				
-				
-                <!-- 🛡PRIVATE ACCOUNTS🛡 -->
-                <div class="tool-category">
-                    <h4>🛡PRIVATE ACCOUNTS🛡</h4>
-                    <ul>
-                        <li>👑Paid VPN Logins</li>
-                        <li>👑Other We Can't Mention Here</li>
-                    </ul>
-                </div>
-                
-				 <!-- 📊PRIVATE METHODS📊 -->
-                <div class="tool-category">
-                    <h4>📊PRIVATE METHODS📊</h4>
-                    <ul>
-                        <li>📱Netflix Method</li>
-                        <li>📱Telegram Premium Method</li>
-                        <li>⚠️H@cking Method</li>
-                        <li>🍟Zomato Method</li>
-                        <li>📱Youtube Method</li>
-                        <li>😍P*rn Hub Method</li>
-                        <li>💳CC TO UPI</li>
-                        <li>📱IOS C@rding</li>
-                        <li>👑Other We Can't Mention Here</li>
-                        <li>🌸Best tools hacking or other</li>
-                        <li>👻Spotify method</li>
-                        <li>‼️WORKING B1NS DROP</li>
-                    </ul>
-                </div>
-				
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>16+ প্রিমিয়াম হ্যাকিং কোর্স <span class="hero-highlight">একটি প্যাকেজে</span></h1>
+            <p>বাংলাদেশের সবচেয়ে সম্পূর্ণ সাইবার সিকিউরিটি ও হ্যাকিং ট্রেনিং প্ল্যাটফর্ম</p>
+            <div class="hero-buttons">
+                <button class="cta-button pulse">এখনই এক্সেস পান</button>
+                <button class="cta-button secondary-button">বিস্তারিত দেখুন</button>
             </div>
         </div>
+    </section>
 
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <h2 class="section-title">আমাদের সকল কোর্স ক্যাটেগরি</h2>
+        <div class="categories-grid">
+            <!-- Category 1: Private Courses -->
+            <div class="category-card">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>⬆️PRIVATE COURSE ⬆️</h3>
+                </div>
+                <div class="category-content">
+                    <ul class="category-list">
+                        <li><i class="fas fa-arrow-right list-icon"></i> C@rding Course</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Cr@cking Course</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Bl@ck Hat Hacking Course</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> AI Courses</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Other We Can't Mention here</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Cxc checker making course & source codes</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Category 2: Private Accounts -->
+            <div class="category-card">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>🛡PRIVATE ACCOUNTS🛡</h3>
+                </div>
+                <div class="category-content">
+                    <ul class="category-list">
+                        <li><i class="fas fa-arrow-right list-icon"></i> Paid VPN Logins</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Other We Can't Mention Here</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Category 3: Private Methods -->
+            <div class="category-card">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>📊PRIVATE METHODS📊</h3>
+                </div>
+                <div class="category-content">
+                    <ul class="category-list">
+                        <li><i class="fas fa-arrow-right list-icon"></i> Netflix Method</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Telegram Premium Method</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> H@cking Method</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Zomato Method</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Youtube Method</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> P*rn Hub Method</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> CC TO UPI</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> IOS C@rding</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Other We Can't Mention Here</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Best tools hacking or other</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Spotify method</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> WORKING B1NS DROP</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Category 4: Binning -->
+            <div class="category-card">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>মেথড কম্বো ২: বিনিং</h3>
+                </div>
+                <div class="category-content">
+                    <ul class="category-list">
+                        <li><i class="fas fa-arrow-right list-icon"></i> বিন কি?</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> বিন কিভাবে কাজ করে?</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> বিন কিভাবে বের করে বা হান্ট করে?</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> কিভাবে প্রাইভেট বিন বের করে?</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> কোন বিন কোন সাইটে কাজ করে?</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> কিভাবে বিন দিয়ে ১০০% সাকসেস হওয়া যায়</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> বিভিন্ন বিনের ক্ষেত্রে বিভিন্ন VPN/IP এর ব্যাবহার</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> কিছু Hidden ট্রিক (শুধু কোর্সে পাওয়া যাবে)</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> নতুন মেথড ও আপডেট</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Category 5: Carding -->
+            <div class="category-card">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3>মেথড কম্বো ৩: কার্ডিং</h3>
+                </div>
+                <div class="category-content">
+                    <ul class="category-list">
+                        <li><i class="fas fa-arrow-right list-icon"></i> চার্জ সিসি কি?</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> চার্জ সিসি দিয়ে কিভাবে কার্ডিং করতে হয়?</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> কিভাবে চার্জ সিসি পেতে হয়?</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> এসকে কি?</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> এসকে কিভাবে কাজ করে?</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> চেকার কি ও কিভাবে কাজ করে?</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> চেকার দিয়ে কিভাবে চার্জ সিসি নিতে হয়?</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> গোপন কার্ডিং ট্রিকস (শুধু কোর্সে)</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> নতুন কার্ডিং মেথড</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Category 6: Cookies Cracking -->
+            <div class="category-card">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-cookie-bite"></i>
+                    </div>
+                    <h3>মেথড কম্বো ৪: কুকিজ ক্র্যাকিং</h3>
+                </div>
+                <div class="category-content">
+                    <ul class="category-list">
+                        <li><i class="fas fa-arrow-right list-icon"></i> কুকিজ কি?</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> কুকিজ কিভাবে কাজ করে?</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> কিভাবে কুকিজ ক্র্যাক করতে হয়?</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> পাসওয়ার্ড ছাড়া একাউন্ট এক্সেস</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> একসাথে নেটফ্লিক্স/যেকোনো সাইট ক্র্যাকিং</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> এ্যামাজন, ইয়াহু একাউন্ট এক্সেস</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> গোপন কুকিজ ট্রিকস (শুধু কোর্সে)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Category 7: Premium Account Cracking -->
+            <div class="category-card">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-user-lock"></i>
+                    </div>
+                    <h3>মেথড কম্বো ৫: প্রিমিয়াম একাউন্ট ক্র্যাকিং</h3>
+                </div>
+                <div class="category-content">
+                    <ul class="category-list">
+                        <li><i class="fas fa-arrow-right list-icon"></i> ক্র্যাকিং কি?</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> ক্র্যাকিং এর সকল পদ্ধতি</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> প্রিমিয়াম একাউন্ট ক্র্যাকিং</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> ক্র্যাকিং টুলস ব্যবহার</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> RDP এবং VPS সেটআপ</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> প্রাইভেট ডাটাবেইজ ডাম্প</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> প্রাইভেট কনফিগ বানানো</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> গোপন ক্র্যাকিং টেকনিক</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Category 8: Premium VPNs -->
+            <div class="category-card">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
+                    <h3>🟢 ALL TYPES OF PREMIUM VPN</h3>
+                </div>
+                <div class="category-content">
+                    <h4 style="color: var(--accent); margin-bottom: 10px;">🧠 Top Rated Premium VPNs</h4>
+                    <ul class="category-list">
+                        <li><i class="fas fa-arrow-right list-icon"></i> ExpressVPN</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> NordVPN</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> SurfShark VPN</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> CyberGhost</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> IPVanish</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Hotspot Shield</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Private Internet Access (PIA)</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> HMA (HideMyAss)</li>
+                    </ul>
+                    
+                    <h4 style="color: var(--accent); margin: 15px 0 10px;">🦠 Antivirus Powered VPNs</h4>
+                    <ul class="category-list">
+                        <li><i class="fas fa-arrow-right list-icon"></i> Bitdefender VPN</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Kaspersky VPN</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Avast VPN</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> AVG VPN</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Panda VPN Pro</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Category 9: VPN & IP Tricks -->
+            <div class="category-card">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>🔒 VPN & IP Tricks</h3>
+                </div>
+                <div class="category-content">
+                    <ul class="category-list">
+                        <li><i class="fas fa-arrow-right list-icon"></i> Hotspot Shield VPN M€thod</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Any VPN Based Subscription Unlock</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> BIN Surfshark 7 Days Trial</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Eneba Surfshark 2-Month Trial</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Lifetime Free Web Hosting Sites</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Free Hosting & Domain for WordPress 2025</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Free RDP Creation M€thod</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Category 10: Subscription Methods -->
+            <div class="category-card">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>🎬 Premium Subscription Unlock M€thods</h3>
+                </div>
+                <div class="category-content">
+                    <ul class="category-list">
+                        <li><i class="fas fa-arrow-right list-icon"></i> YouTube Premium (Unlimited Invites)</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Netflix M€thods (Free Account)</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Amazon Prime (1-6 Month)</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Crunchyroll C2P M€thod</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Hotstar Crack M€thod</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Disney+ Trial H@ck</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Telegram Premium M€thod</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Category 11: Music & Learning -->
+            <div class="category-card">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>🎧 Music & Learning</h3>
+                </div>
+                <div class="category-content">
+                    <ul class="category-list">
+                        <li><i class="fas fa-arrow-right list-icon"></i> Spotify 3 Months AutoPay M€thod</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Tidal Premium Method</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> JioSaavn 1-Year Method (With B1N)</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Duolingo Super Access</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Skillshare 1-Month Trial</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Category 12: Bonus -->
+            <div class="category-card">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>🎁 Bonus</h3>
+                </div>
+                <div class="category-content">
+                    <ul class="category-list">
+                        <li><i class="fas fa-arrow-right list-icon"></i> Play Store Free Trial</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Google Drive 2TB Free Trial</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> ChatGPT Plus M€thod</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Google One M€thod 2025</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Category 13: Hacking & Cyber Tools -->
+            <div class="category-card">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <h3>🧠 H@cking & Cyber Tools</h3>
+                </div>
+                <div class="category-content">
+                    <ul class="category-list">
+                        <li><i class="fas fa-arrow-right list-icon"></i> Android H@cking Advanced Course</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Wi-Fi H@cking Full Course 2025</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Email B0mber using Python</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Byp@ss Gmail Mobile Verification</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Instagram 2FA Byp@ss</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Byp@ss Android Pattern Lock using ADB</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Create Camera H@ck Telegram Bot</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> WhatsApp & Gmail H@cking (Bypass 2FA)</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Facebook Hacking Ebook</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Spam & Bot Tools</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Category 14: Carding & Payment -->
+            <div class="category-card">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>💳 C@rding, B1N, Payment & R€fund Tricks</h3>
+                </div>
+                <div class="category-content">
+                    <ul class="category-list">
+                        <li><i class="fas fa-arrow-right list-icon"></i> Paid C@rding Course (Basic to Advance)</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> CC Generator + Checker Tools</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Mastercard $200 iTunes GiftCard BIN</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Eneba C@rding Trick</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Amazon R€fund M€thod (2025 L€aked)</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Netflix via Charge CC</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Kotak Bank Account Cr€ator M€thod</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> CC to UPI M€thod</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Paypal/Stripe 2FA Byp@ss</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> eBay R€fund + Amazon Free GiftCard</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Free Pizza Trick 🍕</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Refund Gift Card Method</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> How to Create Your Own BIN</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> How to Buy CC from D@rkweb</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Secret B1N Society Tutorials</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Category 15: OSINT & Deep Tools -->
+            <div class="category-card">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>🧠 Info Gathering / OSINT / D€ep Tools</h3>
+                </div>
+                <div class="category-content">
+                    <ul class="category-list">
+                        <li><i class="fas fa-arrow-right list-icon"></i> D€ep Web Search Engines</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> How to Find Info About Anyone</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> How to Get Email & Phone of Instagram Users</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> SEO Secrets</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Create Your Own D@rk Web Site</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Proxy List Scraping for Cr@cking</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Category 16: Bots & Automation -->
+            <div class="category-card">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>💼 Bots, Automation & Unlimited Creator Tools</h3>
+                </div>
+                <div class="category-content">
+                    <ul class="category-list">
+                        <li><i class="fas fa-arrow-right list-icon"></i> Unlimited Gmail Account Creator</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> WhatsApp Unlimited Account Creator</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Telegram Premium Android Creator</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> YouTube View Booster</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Instagram Auto Liker</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Fake Number Calling Generator</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> +48, +31, +33, +385, +1, etc. Free Phone Numbers</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Edumail Creator M€thod</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Category 17: Ebooks & Tutorials -->
+            <div class="category-card">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>📚 Ebooks, Tutorials, & DIY Guides</h3>
+                </div>
+                <div class="category-content">
+                    <ul class="category-list">
+                        <li><i class="fas fa-arrow-right list-icon"></i> SEO Secrets Guide</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Full Carding Class (Basic to Pro)</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Guide to Make Money Online</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> How to Make a Mobile App (No Coding)</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> How to Create CC Checker on Localhost</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> How to Make Private B1N</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Amazon R€fund Explained Video</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> AWS Free Trick + Setup</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Spamming Complete Course</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Advance Checker Making Course</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> How to Set Up Mobile for C@rding</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> How to Make Your Own Song</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Category 18: Fun & Bonus -->
+            <div class="category-card">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>🎁 Other Fun or Bonus M€thods</h3>
+                </div>
+                <div class="category-content">
+                    <ul class="category-list">
+                        <li><i class="fas fa-arrow-right list-icon"></i> Free Pizza Trick</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> P0rnhub Account Access M€thod</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> FF Diamond Generator</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Amazon Gift Cards Generator</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Am@zon Susp€nded Account Unlock</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> X (Twitter) Premium Trick</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> IPTV Unlimited Access M€thod</li>
+                        <li><i class="fas fa-arrow-right list-icon"></i> Make Unlimited R€ferrals</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	    
-        <!-- Step 2: Binning -->
-        <div class="module-card">
-            <h3 class="bangla">মেথড কম্বো ২: বিনিং</h3>
-            <ul class="module-list">
-                <li class="module-item bangla">🧡 বিন কি?</li>
-                <li class="module-item bangla">🧡 বিন কিভাবে কাজ করে?</li>
-                <li class="module-item bangla">🧡 বিন কিভাবে বের করে বা হান্ট করে?</li>
-                <li class="module-item bangla">🧡 কিভাবে প্রাইভেট বিন বের করে?</li>
-                <li class="module-item bangla">🧡 কোন বিন কোন সাইটে কাজ করে?</li>
-                <li class="module-item bangla">🧡 কিভাবে বিন দিয়ে ১০০% সাকসেস হওয়া যায়</li>
-                <li class="module-item bangla">🧡 বিভিন্ন বিনের ক্ষেত্রে বিভিন্ন VPN/IP এর ব্যাবহার</li>
-                <li class="module-item bangla">🧡 কিছু Hidden ট্রিক (শুধু কোর্সে পাওয়া যাবে)</li>
-                <li class="module-item bangla">🧡 নতুন মেথড ও আপডেট</li>
-            </ul>
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <h2 class="section-title">এক্সক্লুসিভ প্যাকেজ অফার</h2>
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <h3>সম্পূর্ণ হ্যাকিং মাস্টারি বান্ডেল</h3>
+                <p>16+ ক্যাটেগরির সমস্ত কোর্স, টুলস এবং মেথড একসাথে</p>
+                
+                <div class="price">
+                    ৳ ৭,৯৯৯ <span>৳ ৩২,৯৯৯</span>
+                </div>
+                
+                <p>সীমিত সময়ের অফার, শিগগিরই মূল্য বৃদ্ধি পাচ্ছে</p>
+                
+                <ul class="package-features">
+                    <li><i class="fas fa-check-circle"></i> আজীবন এক্সেস এবং আপডেট</li>
+                    <li><i class="fas fa-check-circle"></i> প্রাইভেট টেলিগ্রাম গ্রুপে এক্সেস</li>
+                    <li><i class="fas fa-check-circle"></i> ২৪/৭ বিশেষজ্ঞ সাপোর্ট</li>
+                    <li><i class="fas fa-check-circle"></i> এক্সক্লুসিভ টুলস ও স্ক্রিপ্ট ডাউনলোড</li>
+                    <li><i class="fas fa-check-circle"></i> ৩০ দিন মানি ব্যাক গ্যারান্টি</li>
+                    <li><i class="fas fa-check-circle"></i> বোনাস: প্রাইভেট মেথড আপডেট</li>
+                </ul>
+                
+                <button class="cta-button pulse" style="padding: 1.2rem 3rem; font-size: 1.2rem;">
+                    এখনই সুরক্ষিত করুন <i class="fas fa-arrow-right"></i>
+                </button>
+                
+                <p style="margin-top: 1.5rem; color: var(--text-secondary);">
+                    <i class="fas fa-lock"></i> সুরক্ষিত পেমেন্ট, ১০০% গোপনীয়তা
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <h2 class="section-title">আমাদের শিক্ষার্থীরা যা বলেন</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p class="testimonial-text">"এই কোর্সটি আমার জীবন বদলে দিয়েছে। মাত্র এক মাসে আমি মাসে ৫০,০০০ টাকা আয় করতে শিখেছি। বিনিং ও কার্ডিং সেকশনটি অসাধারণ!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">R</div>
+                        <div class="author-info">
+                            <h4>রাকিব হাসান</h4>
+                            <p>সফটওয়্যার ডেভেলপার</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p class="testimonial-text">"ভিপিএন ও আইপি ট্রিকস সেকশনটি আমার ব্যবসায় বিপ্লব এনেছে। এখন আমি যেকোনো দেশের আইপি দিয়ে কাজ করতে পারি। ইনভেস্টমেন্টের সেরা রিটার্ন!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">S</div>
+                        <div class="author-info">
+                            <h4>সুমাইয়া আক্তার</h4>
+                            <p>ডিজিটাল মার্কেটার</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p class="testimonial-text">"আমি কখনও ভাবিনি যে এত সহজে প্রিমিয়াম অ্যাকাউন্ট ক্র্যাক করা যায়। কোর্সের প্র্যাকটিকাল ভিডিওগুলো সত্যিই অসাধারণ। সাপোর্ট টিমের প্রশংসা করতেই হবে!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div class="author-info">
+                            <h4>আরাফাত রহমান</h4>
+                            <p>সাইবার সিকিউরিটি স্টুডেন্ট</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="faq-container">
+            <h2 class="section-title">সচরাচর জিজ্ঞাসিত প্রশ্ন</h2>
+            
+            <div class="faq-item active">
+                <div class="faq-question">
+                    এই কোর্সটি কাদের জন্য উপযুক্ত?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>এই কোর্সটি সম্পূর্ণ নতুনদের জন্য ডিজাইন করা হয়েছে যাদের হ্যাকিং বা সাইবার সিকিউরিটি সম্পর্কে কোন পূর্ব অভিজ্ঞতা নেই। একই সাথে অ্যাডভান্সড ব্যবহারকারীরাও কোর্স থেকে নতুন টেকনিক শিখতে পারবেন।</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    আমি কিভাবে কন্টেন্ট এক্সেস করব?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>পেমেন্ট সম্পন্ন হওয়ার পর আপনি লাইফটাইম এক্সেস পেয়ে যাবেন আমাদের প্রাইভেট মেম্বারশিপ পোর্টালে। সেখানে সবকিছু ক্যাটাগরি অনুযায়ী সাজানো থাকবে। আপনি যেকোনো সময় যেকোনো ডিভাইস থেকে লগইন করে শিখতে পারবেন।</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    আমার যদি প্রশ্ন থাকে বা সাহায্য দরকার হয়?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>আমাদের ডেডিকেটেড সাপোর্ট টিম ২৪/৭ প্রাইভেট টেলিগ্রাম গ্রুপে আপনার প্রশ্নের উত্তর দিতে প্রস্তুত। এছাড়াও সাপ্তাহিক লাইভ Q&A সেশনের মাধ্যমে সরাসরি প্রশ্ন করতে পারবেন।</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    পেমেন্ট গোপনীয়তা কতটা সুরক্ষিত?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>আমরা SSL এনক্রিপশন এবং নিরাপদ পেমেন্ট গেটওয়ে ব্যবহার করি। আপনার ব্যক্তিগত তথ্য কখনই তৃতীয় পক্ষের সাথে শেয়ার করা হয় না। সকল লেনদেন সম্পূর্ণ গোপনীয়তার সাথে পরিচালিত হয়।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="logo-text">EliteHacker Pro</div>
+                </div>
+                <p>বাংলাদেশের সবচেয়ে সম্পূর্ণ সাইবার সিকিউরিটি ও হ্যাকিং ট্রেনিং প্ল্যাটফর্ম।</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>কুইক লিংক</h3>
+                <ul class="footer-links">
+                    <li><a href="#categories">ক্যাটেগরি</a></li>
+                    <li><a href="#pricing">ক্রয় করুন</a></li>
+                    <li><a href="#testimonials">পর্যালোচনা</a></li>
+                    <li><a href="#faq">প্রশ্নোত্তর</a></li>
+                    <li><a href="#">সাপোর্ট</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>ক্যাটেগরি</h3>
+                <ul class="footer-links">
+                    <li><a href="#">হ্যাকিং কোর্স</a></li>
+                    <li><a href="#">কার্ডিং মেথড</a></li>
+                    <li><a href="#">অ্যাকাউন্ট ক্র্যাকিং</a></li>
+                    <li><a href="#">VPN & প্রক্সি</a></li>
+                    <li><a href="#">টুলস ও স্ক্রিপ্ট</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>যোগাযোগ</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-envelope"></i> support@elitehacker.pro</li>
+                    <li><i class="fab fa-telegram"></i> t.me/elitehacker_support</li>
+                    <li><i class="fas fa-headset"></i> ২৪/৭ সাপোর্ট</li>
+                </ul>
+            </div>
         </div>
         
-        <!-- Step 3: Carding -->
-        <div class="module-card">
-            <h3 class="bangla">মেথড কম্বো ৩: কার্ডিং</h3>
-            <ul class="module-list">
-                <li class="module-item bangla">🧡 চার্জ সিসি কি?</li>
-                <li class="module-item bangla">🧡 চার্জ সিসি দিয়ে কিভাবে কার্ডিং করতে হয়?</li>
-                <li class="module-item bangla">🧡 কিভাবে চার্জ সিসি পেতে হয়?</li>
-                <li class="module-item bangla">🧡 এসকে কি?</li>
-                <li class="module-item bangla">🧡 এসকে কিভাবে কাজ করে?</li>
-                <li class="module-item bangla">🧡 চেকার কি ও কিভাবে কাজ করে?</li>
-                <li class="module-item bangla">🧡 চেকার দিয়ে কিভাবে চার্জ সিসি নিতে হয়?</li>
-                <li class="module-item bangla">🧡 গোপন কার্ডিং ট্রিকস (শুধু কোর্সে)</li>
-                <li class="module-item bangla">🧡 নতুন কার্ডিং মেথড</li>
-            </ul>
+        <div class="copyright">
+            &copy; ২০২৫ EliteHacker Pro. সকল অধিকার সংরক্ষিত। 
+            <br>
+            এই সাইটটি শিক্ষামূলক উদ্দেশ্যে তৈরি করা হয়েছে। অবৈধ কার্যকলাপে উৎসাহিত করা হয় না।
         </div>
-        
-        <!-- Step 4: Cookies Cracking -->
-        <div class="module-card">
-            <h3 class="bangla">মেথড কম্বো ৪: কুকিজ ক্র্যাকিং</h3>
-            <ul class="module-list">
-                <li class="module-item bangla">🧡 কুকিজ কি?</li>
-                <li class="module-item bangla">🧡 কুকিজ কিভাবে কাজ করে?</li>
-                <li class="module-item bangla">🧡 কিভাবে কুকিজ ক্র্যাক করতে হয়?</li>
-                <li class="module-item bangla">🧡 পাসওয়ার্ড ছাড়া একাউন্ট এক্সেস</li>
-                <li class="module-item bangla">🧡 একসাথে নেটফ্লিক্স/যেকোনো সাইট ক্র্যাকিং</li>
-                <li class="module-item bangla">🧡 এ্যামাজন, ইয়াহু একাউন্ট এক্সেস</li>
-                <li class="module-item bangla">🧡 গোপন কুকিজ ট্রিকস (শুধু কোর্সে)</li>
-            </ul>
-        </div>
+    </footer>
 
-        <!-- Step 5: Premium Account Cracking -->
-        <div class="module-card">
-            <h3 class="bangla">মেথড কম্বো ৫: প্রিমিয়াম একাউন্ট ক্র্যাকিং</h3>
-            <ul class="module-list">
-                <li class="module-item bangla">🧡 ক্র্যাকিং কি?</li>
-                <li class="module-item bangla">🧡 ক্র্যাকিং এর সকল পদ্ধতি</li>
-                <li class="module-item bangla">🧡 প্রিমিয়াম একাউন্ট ক্র্যাকিং</li>
-                <li class="module-item bangla">🧡 ক্র্যাকিং টুলস ব্যবহার</li>
-                <li class="module-item bangla">🧡 RDP এবং VPS সেটআপ</li>
-                <li class="module-item bangla">🧡 প্রাইভেট ডাটাবেইজ ডাম্প</li>
-                <li class="module-item bangla">🧡 প্রাইভেট কনফিগ বানানো</li>
-                <li class="module-item bangla">🧡 গোপন ক্র্যাকিং টেকনিক</li>
-            </ul>
-        </div>
-
-
-    <!-- Step 6: Viral Method -->
-    <div class="module-card">
-        <h3 class="bangla">🟢 𝗔𝗟𝗟 𝗧𝗬𝗣𝗘𝗦 𝗢𝗙 𝗣𝗥𝗘𝗠𝗜𝗨𝗠 𝗩𝗣𝗡</h3>
-        <ul class="module-list">
-            <h4 class="bangla">🧠 Top Rated Premium VPNs </h4>
-            <li class="module-item bangla">🥇 ExpressVPN</li>
-            <li class="module-item bangla">🥈 NordVPN</li>
-            <li class="module-item bangla">🥉 SurfShark VPN</li>
-            <li class="module-item bangla">🔰 CyberGhost</li>
-            <li class="module-item bangla">🔰 IPVanish</li>
-            <li class="module-item bangla">🔰 Hotspot Shield</li>
-            <li class="module-item bangla">🔰 Private Internet Access (PIA)</li>
-            <li class="module-item bangla">🔰 HMA (HideMyAss)</li>
-            
-            <h4 class="bangla">🦠 Antivirus Powered VPNs</h4>
-            <li class="module-item bangla">🛡️ Bitdefender VPN</li>
-            <li class="module-item bangla">🛡️ Kaspersky VPN</li>
-            <li class="module-item bangla">🛡️ Avast VPN</li>
-            <li class="module-item bangla">🛡️ AVG VPN</li>
-            <li class="module-item bangla">🛡️ Panda VPN Pro</li>
-            
-            <h4 class="bangla">⚡ Fast & Lightweight VPNs</h4>
-            <li class="module-item bangla">⚡ Turbo VPN</li>
-            <li class="module-item bangla">⚡ VyperVPN</li>
-            <li class="module-item bangla">⚡ Fast VPN</li>
-            <li class="module-item bangla">⚡ Box VPN</li>
-            <li class="module-item bangla">⚡ Sky VPN</li>
-            <li class="module-item bangla">⚡ Atlas VPN</li>
-            <li class="module-item bangla">⚡ Quad VPN</li>
-            <li class="module-item bangla">⚡ Unlimited VPN</li>
-            
-            <h4 class="bangla">🎭 Unique & Rare VPNs</h4>
-            <li class="module-item bangla">🎭 X-VPN</li>
-            <li class="module-item bangla">🎭 VPN Proxy Master</li>
-            <li class="module-item bangla">🎭 Potato VPN Pro</li>
-            <li class="module-item bangla">🎭 Sheed4Me VPN</li>
-            <li class="module-item bangla">🎭 Hola VPN</li>
-            <li class="module-item bangla">🎭 Malware VPN</li>
-        </ul>
-    </div>
-</div>
-
-
-    <!-- Step 7: Viral Method -->
-    <div class="module-card">
-        <h3 class="bangla">🔒 VPN & IP Tricks</h3>
-        <ul class="module-list">
-            <li class="module-item bangla">✅ Hotspot Shield VPN M€thod</li>
-            <li class="module-item bangla">✅ Any VPN Based Subscription Unlock</li>
-            <li class="module-item bangla">✅ BIN Surfshark 7 Days Trial</li>
-            <li class="module-item bangla">✅ Eneba Surfshark 2-Month Trial</li>
-            <li class="module-item bangla">✅ Lifetime Free Web Hosting Sites</li>
-            <li class="module-item bangla">✅ Free Hosting & Domain for WordPress 2025</li>
-            <li class="module-item bangla">✅ Free RDP Creation M€thod</li>
-        </ul>
-    </div>
-</div>
-	
-
-
-    <!-- Step 8: Viral Method -->
-    <div class="module-card">
-        <h3 class="bangla">🎬 Premium Subscription Unlock M€thods</h3>
-        <ul class="module-list">
-         
-            <h4 class="bangla">🎥 Streaming Platforms</h4>
-            <li class="module-item bangla">🎞️ YouTube Premium (Unlimited Invites | 6-Month Method | Trial Tricks)</li>
-            <li class="module-item bangla">🎞️ Netflix M€thods (Free Account | No Phone Issue | Lifetime Access | C2P)</li>
-            <li class="module-item bangla">🎞️ Amazon Prime (1 Month | 3 Month | 6 Month)</li>
-            <li class="module-item bangla">🎞️ Crunchyroll C2P M€thod</li>
-            <li class="module-item bangla">🎞️ Hotstar Crack M€thod</li>
-            <li class="module-item bangla">🎞️ Disney+ Trial H@ck</li>
-            <li class="module-item bangla">🎞️ Telegram Premium M€thod (Android & General)</li>
-        </ul>
-    </div>
-</div>
-
-
-
-    <!-- Step 9: Viral Method -->
-    <div class="module-card">
-        <h3 class="bangla">🎧 Music & Learning</h3>
-        <ul class="module-list">
-       
-            <li class="module-item bangla">🎵 Spotify 3 Months AutoPay M€thod</li>
-            <li class="module-item bangla">🎵 Tidal Premium Method</li>
-            <li class="module-item bangla">🎵 JioSaavn 1-Year Method (With B1N)</li>
-            <li class="module-item bangla">📚 Duolingo Super Access</li>
-            <li class="module-item bangla">📚 Skillshare 1-Month Trial</li>
-        </ul>
-    </div>
-</div>
-
-
-    <!-- Step 10: Viral Method -->
-    <div class="module-card">
-        <h3 class="bangla">🎁 Bonus</h3>
-        <ul class="module-list">
-            <li class="module-item bangla">✅ Play Store Free Trial (No VPN Required)</li>
-            <li class="module-item bangla">✅ Google Drive 2TB Free Trial</li>
-            <li class="module-item bangla">✅ ChatGPT Plus M€thod</li>
-            <li class="module-item bangla">✅ Google One M€thod 2025</li>
-        </ul>
-    </div>
-</div>
-	
-
-
-    <!-- Step 11: Viral Method -->
-    <div class="module-card">
-        <h3 class="bangla">🧠 H@cking & Cyber Tools</h3>
-        <ul class="module-list">
-            <li class="module-item bangla">🧩 Android H@cking Advanced Course</li>
-            <li class="module-item bangla">📶 Wi-Fi H@cking Full Course 2025</li>
-            <li class="module-item bangla">📨 Email B0mber using Python</li>
-            <li class="module-item bangla">🕵️‍♂️ Byp@ss Gmail Mobile Verification</li>
-            <li class="module-item bangla">🔐 Instagram 2FA Byp@ss (Session Hijacking)</li>
-            <li class="module-item bangla">📱 Byp@ss Android Pattern Lock using ADB</li>
-            <li class="module-item bangla">📷 Create Camera H@ck Telegram Bot (No Coding | Free Hosting)</li>
-            <li class="module-item bangla">🔓 WhatsApp & Gmail H@cking (Bypass 2FA)</li>
-            <li class="module-item bangla">📖 Facebook Hacking Ebook</li>
-            <li class="module-item bangla">💣 Spam & Bot Tools (YouTube Bot, Insta Liker, Snow Bot)</li>
-        </ul>
-    </div>
-</div>
-
-
-
-    <!-- Step 12: Viral Method -->
-    <div class="module-card">
-        <h3 class="bangla">💳 C@rding, B1N, Payment & R€fund Tricks</h3>
-        <ul class="module-list">
-            
-            <li class="module-item bangla">💳 Paid C@rding Course (Basic to Advance)</li>
-            <li class="module-item bangla">💰 CC Generator + Checker Tools</li>
-            <li class="module-item bangla">💳 Mastercard $200 iTunes GiftCard BIN</li>
-            <li class="module-item bangla">💳 Eneba C@rding Trick</li>
-            <li class="module-item bangla">💳 Amazon R€fund M€thod (2025 L€aked)</li>
-            <li class="module-item bangla">💳 Netflix via Charge CC</li>
-            <li class="module-item bangla">🏦 Kotak Bank Account Cr€ator M€thod</li>
-            <li class="module-item bangla">🔁 CC to UPI M€thod</li>
-            <li class="module-item bangla">💳 Paypal/Stripe 2FA Byp@ss</li>
-            <li class="module-item bangla">📦 eBay R€fund + Amazon Free GiftCard</li>
-            <li class="module-item bangla">💳 Free Pizza Trick 🍕</li>
-            <li class="module-item bangla">💸 Refund Gift Card Method</li>
-            <li class="module-item bangla">💳 How to Create Your Own BIN</li>
-            <li class="module-item bangla">💼 How to Buy CC from D@rkweb</li>
-            <li class="module-item bangla">🧪 Secret B1N Society Tutorials</li>
-        </ul>
-    </div>
-</div>
-
-
-
-    <!-- Step 13: Viral Method -->
-    <div class="module-card">
-        <h3 class="bangla">🧠 Info Gathering / OSINT / D€ep Tools</h3>
-        <ul class="module-list">
-
-            
-            <li class="module-item bangla">🔍 D€ep Web Search Engines</li>
-            <li class="module-item bangla">🔍 How to Find Info About Anyone</li>
-            <li class="module-item bangla">📧 How to Get Email & Phone of Instagram Users</li>
-            <li class="module-item bangla">🌐 SEO Secrets</li>
-            <li class="module-item bangla">🌍 Create Your Own D@rk Web Site</li>
-            <li class="module-item bangla">🌐 Proxy List Scraping for Cr@cking</li>
-        </ul>
-    </div>
-</div>
-
-
-
-	
-    <!-- Step 14: Viral Method -->
-    <div class="module-card">
-        <h3 class="bangla">💼 Bots, Automation & Unlimited Creator Tools</h3>
-        <ul class="module-list">
-            
-            <li class="module-item bangla">🤖 Unlimited Gmail Account Creator</li>
-            <li class="module-item bangla">🤖 WhatsApp Unlimited Account Creator</li>
-            <li class="module-item bangla">🤖 Telegram Premium Android Creator</li>
-            <li class="module-item bangla">📺 YouTube View Booster</li>
-            <li class="module-item bangla">❤️ Instagram Auto Liker</li>
-            <li class="module-item bangla">🔄 Snow's YouTube Bot</li>
-            <li class="module-item bangla">🔁 Fake Number Calling Generator</li>
-            <li class="module-item bangla">🔁 +48, +31, +33, +385, +1, etc. Free Phone Numbers</li>
-            <li class="module-item bangla">✅ Edumail Creator M€thod</li>
-        </ul>
-    </div>
-</div>
-
-
-
-	
-    <!-- Step 15: Viral Method -->
-    <div class="module-card">
-        <h3 class="bangla">📚 Ebooks, Tutorials, & DIY Guides</h3>
-        <ul class="module-list">
-            <li class="module-item bangla">📘 SEO Secrets Guide</li>
-            <li class="module-item bangla">📘 Full Carding Class (Basic to Pro)</li>
-            <li class="module-item bangla">📗 Guide to Make Money Online</li>
-            <li class="module-item bangla">📗 How to Make a Mobile App (No Coding)</li>
-            <li class="module-item bangla">📘 How to Create CC Checker on Localhost</li>
-            <li class="module-item bangla">🧠 How to Make Private B1N</li>
-            <li class="module-item bangla">🎥 Amazon R€fund Explained Video</li>
-            <li class="module-item bangla">🛠️ AWS Free Trick + Setup</li>
-            <li class="module-item bangla">🧪 Spamming Complete Course</li>
-            <li class="module-item bangla">🏗️ Advance Checker Making Course</li>
-            <li class="module-item bangla">📲 How to Set Up Mobile for C@rding</li>
-            <li class="module-item bangla">🎶 How to Make Your Own Song</li>
-        </ul>
-    </div>
-</div>
-
-
-	
-    <!-- Step 16: Viral Method -->
-    <div class="module-card">
-        <h3 class="bangla">🎁 Other Fun or Bonus M€thods</h3>
-        <ul class="module-list">
-            <li class="module-item bangla">🎯 Free Pizza Trick</li>
-            <li class="module-item bangla">🎬 P0rnhub Account Access M€thod</li>
-            <li class="module-item bangla">🎮 FF Diamond Generator</li>
-            <li class="module-item bangla">🎟️ Amazon Gift Cards Generator</li>
-            <li class="module-item bangla">🥷 Am@zon Susp€nded Account Unlock</li>
-            <li class="module-item bangla">🤖 X (Twitter) Premium Trick</li>
-            <li class="module-item bangla">📡 IPTV Unlimited Access M€thod</li>
-            <li class="module-item bangla">📫 Make Unlimited R€ferrals</li>
-        </ul>
-    </div>
-</div>
-
-
-	
-</section>
-  
-
-<!-- Pricing Section -->
-<section class="pricing">
-    <div class="section-header">
-        <h2 class="bangla">সমস্ত মেথড</h2>
-        <p class="bangla">সরাসরি whatsapp সাপোর্ট 👉 01602366157 </p>
-    </div>
-    
-    <div class="pricing-card">
-        <div class="pricing-content">
-            <h3 class="bangla">অ্যাডভান্স ক্র্যাকিং মাস্টারক্লাস</h3>
-            <div class="price bangla">৳২,৫০০</div>
-            <p class="bangla">প্রথম ১০ জনের জন্য বিশেষ ডিসকাউন্ট</p>
-            <!-- Replace YOUR_ACTUAL_FORM_ID with your real Google Form ID -->
-            <a href="https://forms.gle/Z5vAqpD5XVs77TX9A" class="enroll-button bangla" target="_blank">
-                এখনই এনরোল করুন
-            </a>
-        </div>
-    </div>
-</section>
-
-<script>
-    // Floating Elements Animation
-    const elements = ['🔒', '🔑', '💻', '🖥️', '📱', '🔓', '💾', '📊'];
-    const floatingContainer = document.getElementById('floatingElements');
-    
-    elements.forEach((element, index) => {
-        const el = document.createElement('div');
-        el.className = 'floating-element';
-        el.textContent = element;
-        el.style.fontSize = `${20 + Math.random() * 20}px`;
-        
-        // Apply random gradient color
-        const gradients = [
-            'linear-gradient(45deg, #FF2D55, #FF8E53)',
-            'linear-gradient(45deg, #00F5A7, #00D4FF)',
-            'linear-gradient(45deg, #8A2BE2, #4B0082)',
-            'linear-gradient(45deg, #00B4DB, #0083B0)'
-        ];
-        const randomGradient = gradients[Math.floor(Math.random() * gradients.length)];
-        el.style.background = randomGradient;
-        el.style.webkitBackgroundClip = 'text';
-        el.style.backgroundClip = 'text';
-        el.style.color = 'transparent';
-        el.style.padding = '5px';
-        el.style.borderRadius = '50%';
-        
-        // Random position
-        const left = Math.random() * 90;
-        const top = Math.random() * 90;
-        const delay = Math.random() * 5;
-        const duration = 5 + Math.random() * 10;
-        
-        el.style.left = `${left}%`;
-        el.style.top = `${top}%`;
-        el.style.animationDelay = `${delay}s`;
-        el.style.animationDuration = `${duration}s`;
-        
-        floatingContainer.appendChild(el);
-    });
-    
-    // Enroll Button Click (for smooth scroll)
-    document.getElementById('enrollBtn').addEventListener('click', () => {
-        document.querySelector('.pricing').scrollIntoView({ behavior: 'smooth' });
-    });
-    
-    // Animate elements on scroll
-    const animateOnScroll = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = "1";
-                entry.target.style.transform = "translateY(0)";
-            }
+    <script>
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+            });
         });
-    }, { threshold: 0.1 });
-    
-    document.querySelectorAll('.module-card, .pricing-card').forEach(el => {
-        el.style.opacity = "0";
-        el.style.transform = "translateY(20px)";
-        el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
-        animateOnScroll.observe(el);
-    });
-</script>
-
-
-  <script>
-  document.getElementById("enrollBtn").addEventListener("click", function() {
-    gtag('event', 'button_click', {
-      'event_category': 'Landing Page',
-      'event_label': 'enrollBtn'
-    });
-  });
-</script>
-
+        
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
-
- 
